@@ -6,7 +6,7 @@
 
 
     <p class="text"> Veloco est une nouvelle application web permettant de louer des vélos à Marseille ! <br>
-    En plus de géolocaliser les stands à vélos, elle vous donne en temps réel les stocks disponibles.<br>
+    
     Afin de réserver un vélo, vous devez au préalable vous inscrire puis vous connecter.<br>
     Toute l'équipe Véloco vous souhaite une excellente balade à Marseille 🚴‍♂️ 🏖️ 🏬 ⚽
     </p>

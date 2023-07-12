@@ -3,12 +3,34 @@
     src: url(../font/Wellcake.otf);
 }
 
+@font-face {
+    font-family:"police2";
+    src: url(../font/Roboto-Regular.ttf);
+}
+
+h1{
+    text-align: center;
+    font-size: 7em;
+    color: white;
+    margin-bottom: 100px;
+    font-family:"police1";
+}
+
+h2{
+    text-align: center;
+    font-size: 4em;
+    font-family:"police1";
+    color: white;
+    margin-top: 100px;
+    margin-top: 100px;
+}
+
 
 body{
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, white,#3dc7fb );
-    font-family:"police1";
+    font-family:"police2";
 }
 
 
@@ -21,9 +43,11 @@ body{
 
 header{
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 100px;
-   
+    justify-content: space-between;
+    margin-bottom: 200px;
+   height: 1px;
+  font-family: "police1";
+  
 }
 
 ul{
@@ -34,30 +58,45 @@ ul{
 
 li{
     margin-left: 30px;
-    border: 1px solid white;
-    border-radius: 25px;
+   
     list-style: none;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.3);
-  
+   
 }
 
+#btnAdmin{
+    height: 50px;
+    border-radius: 25px;
+    position: relative;
+    left: 100px;
+}
 
+#btnAdmin:hover{
+    background-color: #2741F5;
+    color: white;
+}
+
+p>a{
+    font-size: 1.5em;
+    font-family:"police1";
+}
 
 
 a{
     text-decoration: none;
     color: #f7f008;
-    font-size: 2em;
+    font-size: 2.5em;
     
 }
 
 li:hover{
-    background-color: black;
+    color: black;
   }
 
 
-  #adminLink{
+  
+
+  #cst, #bk {
     display: none;
   }
 
@@ -74,10 +113,14 @@ li:hover{
     }
 
     label{
-        font-size: 40px;
+        font-size: 20px;
     }
 
-   
+    #myMap{
+        height: 500px;
+      width: 100%;
+      border: 4px solid black;
+    }
 
     #sendConnect,#send{
         font-size: 20px;
@@ -117,8 +160,219 @@ li:hover{
     }
     
     .text{
-        font-size: 2.5em;
+        font-size: 1.5em;
         margin-top: 50px;
         margin-bottom: 100px;
     }
 
+    .slide>img{
+        width: 75%;
+        height: 500px;
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 10px 5px 5px black;
+       
+    }
+
+    
+
+    #txt{
+  text-align: center;
+  color: white;
+  font-size: 1.7em;
+  position: relative;
+  bottom: 500px;
+ 
+    }
+
+    .weather{
+        display: flex;
+        border: 2px solid black;
+        border-radius: 25px;
+        padding: 10px;
+        background-color: white;
+        width: 120px;
+      
+        margin: 10px;
+    }
+
+    .weather>img{
+        height: 50px;
+    }
+
+
+    .weather{
+       color: #3dc7fb;
+    }
+
+
+
+    #ville,#temp,#wind,#weather{
+        font-size: 1.2em;
+    }
+
+    #meteo{
+       display: flex;
+     justify-content: center;
+      margin-bottom: 100px;
+    }
+
+    #sun,#sunlight,#rain{
+        display: none;
+    }
+
+    .wrap>img{
+        height: 50px;
+        margin: auto;
+        width: 100px;
+    }
+
+    .wrap{
+      margin: auto;
+      padding: 10px;
+       border: 5px solid white;
+       border-radius:  50%;
+       width: 10%;
+       display: flex;
+       justify-content: center;
+       background-color: white;
+      
+    }
+
+   
+
+   #image{
+    border-radius: 25px;
+   }
+
+   input{
+    width: 220px;
+    height: 50px;
+    border-radius: 25px;
+   }
+
+   select{
+      width: 220px;
+    height: 50px;
+    
+   }
+
+   #sendBooking{
+    width: 100px;
+    background-color: #2741F5;
+    color: white;
+   }
+
+   #sendBooking:hover{
+    color: #f7f008;
+    background-color: black;
+  
+    
+}
+
+#map{
+    display: flex;
+    margin-top: 100px;
+}
+
+#formBk{
+    border: 1px solid black;
+    background: linear-gradient(to right, #f7f008,#3dc7fb );
+    height: 300px;
+    position: relative;
+    top: 100px;
+}
+
+#psdExist,#errorCo,#enough{
+    display: none;
+    text-align: center;
+    font-size: 2.5em;
+    color: red;
+
+}
+
+.textEnd{
+    text-align: center;
+    font-size: 2em;
+}
+
+@keyframes defil{
+    0%{
+        transform: translateX(0);
+    }
+
+    33%{
+        transform: translateX(-297px);
+    }
+
+   
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+#slides_bike{
+    
+    animation: defil 5s infinite;
+}
+
+#slides_bike{
+    display: flex;
+}
+
+.slid{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+
+
+.slider_bike{
+    overflow: hidden;
+    margin: auto;
+    width: 300px;
+}
+
+#btnAdmin{
+    display: none;
+}
+
+table{
+    border-collapse: collapse;
+   
+    width: auto;
+   
+    border: 1px solid black;
+    margin: 100px auto;
+    cursor: pointer; /* créer un curseur*/
+    padding: 20px;
+}
+
+tr,td,th{
+    margin: 10px;
+    border: 1px solid black;
+}
+
+td{
+    padding: 20px;
+}
+
+
+
+td:hover{
+    background-color:white;
+}
+
+tr>th{
+    background-color: cornflowerblue;
+    font-weight: bold;
+    padding: 20px;
+}
+
+strong{
+    color: #2741F5;
+}

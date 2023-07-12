@@ -1,6 +1,7 @@
 <?php $title = "VELOCO | Marseille"; ?>
 <?php ob_start(); ?>
 
+<br> <br> <br> <br>
 
 <form method="post" action="index.php?action=validConnexion" enctype="multipart/form-data">
 
@@ -17,7 +18,7 @@
 </form>
 
 
-<p class="text">⚠️ Pas encore inscrit ? <a href="index.php?action=subscribe" class="text-warning">Aller à la page d'inscription</a></p>
+<p class="text">⚠️ Pas encore inscrit ? <a href="index.php?action=subscribe" >Aller à la page d'inscription</a></p>
 
 <?php $content = ob_get_clean(); ?>
 
